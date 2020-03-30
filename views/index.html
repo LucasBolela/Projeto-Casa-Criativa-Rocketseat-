@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section id="intro">
+  <header> 
+    <a href="/">
+      <img src="/img/casa_criativa.png" alt="Casa Criativa" class="log">
+    </a>
+  </header>
+  <main>
+    <p>
+      Ficar em casa em periodos longos não deve ser nada fácil.
+    </p>
+    <p>
+      Por isso, iremos catalogar <strong>brincadeiras, jogos, filmes, livros, 
+      cursos, dicas </strong>e tudo que for nocessário para tornar esse 
+      momento mais interessante.
+    </p>
+    <p>
+      Comece clicando em ver ideias para <span class="col">ver as ideias</span> cadastradas e
+      contribua <span class="col">adicionando a sua ideia</span>
+    </p>
+  </main>
+  <section id="button">
+    <button class="btn1" onclick="onOff()">+ Adicionar Ideia</button>
+    <a href="/ideias" class="button">Ver Ideias</a>
+  </section>
+  <footer>
+    <div id="fooot" class="foot">
+      <p>
+        Desenvolvido por <a href="https://www.linkedin.com/in/lucas-bolela-silveira-2992581a0/" target="blank"><b>Lucas Bolela</b></a>
+      </p>
+      <p>
+        Projeto Casa Criativa <a href="https://rocketseat.com.br/" target="blank"><b>Rocketseat</b> 🚀💜</a>
+      </p>
+    </div>  
+  </footer>
+</section>
+<section id="last-ideias">
+
+  {% include "all_ideas.html" %}
+
+</section>
+
+{% endblock %}
